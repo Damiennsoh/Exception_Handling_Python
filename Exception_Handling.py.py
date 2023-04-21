@@ -34,7 +34,8 @@ while True:
         print(f"{equation} ={results}")
         with open("output.txt", "w") as f:
             f.write(f"{equation} = {results}") # This statement opens a new file called output.txt and creates an object "f" and then uses the write function write() to append the equation and the results into it. 
-    
+        break # this will prevent the printed result in the command line to keep looping
+
     except ZeroDivisionError: # Here an exception is raised in case a number is divided by zero, it will print the error error message out and loops from the beginning to retake inputs and an operator.
         with open("output.txt", "w") as f:
             f.write("Undefined, cannot divide by a zero") # This will print the error message into the output text file.
