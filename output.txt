@@ -1,1 +1,0 @@
-Undefined, cannot divide by a zero
